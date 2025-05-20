@@ -81,12 +81,15 @@ Aplicação da arquitetura em camadas (Bronze, Silver, Gold) com refinamento via
 
 ### 5. ⚙️ ETL e Consultas Analíticas
 Pipelines de ETL com transformação dos dados usando Python e SQL, organizando em zonas de chegada, refinamento e curada.
+![ETL](imagens/arquitetura.png)
 
 ### 6. 📊 Etapa de Analytics e Visualização
 Criação de dashboards no Power BI com indicadores como:
 - Produtos mais vendidos
-- Faturamento por região
-- Desempenho de vendedores
+> Faturamento por loja
+![analise1](imagens/arquitetura.png)
+> Desempenho de vendedores
+![analise2](imagens/arquitetura.png)
 - Perfil dos clientes e frequência de compra
 
 ## 🛠️ Tecnologias Utilizadas
