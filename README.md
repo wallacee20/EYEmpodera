@@ -21,15 +21,58 @@ Durante o desenvolvimento deste projeto, foram aplicados aprendizados nas seguin
 ## 🧱 Etapas do Projeto
 
 ### 1. 📈 Definição do modelo de negócio
-Simulação do funcionamento de um supermercado, com foco em clientes, produtos, vendas e performance de equipe.
+O ponto de partida do projeto foi a criação de um modelo de negócio para um supermercado fictício, o Mercado Empodera, com o objetivo de simular operações reais de varejo. Essa simulação permitiu estruturar uma base sólida de dados, considerando processos operacionais, comerciais e estratégicos.
+
+- Foram definidos os principais elementos que compõem a jornada de compra e gestão de um supermercado:
+
+- Clientes: identificação de perfis de consumo, frequência de compras e ticket médio.
+
+- Produtos: cadastro de itens comercializados com categorias, preços e status de estoque.
+
+- Vendas: simulação de notas fiscais com data, horário, forma de pagamento e valor total.
+
+- Itens de venda: detalhamento dos produtos vendidos por nota fiscal.
+
+- Vendedores: registro de colaboradores responsáveis pelas vendas, com foco em performance.
+
+Essa etapa foi essencial para garantir que a estrutura de dados refletisse os processos de negócio, possibilitando análises assertivas e visualizações estratégicas posteriormente. Além disso, contribuiu para a construção do modelo relacional e definição da arquitetura de dados adotada.
 
 ### 2. 📘 Modelagem Entidade-Relacionamento (MER)
-Criação do modelo lógico e físico no SQL Server com tabelas de clientes, produtos, notas fiscais, itens de venda e vendedores.
+Nesta etapa do projeto, foi realizada a modelagem lógica e física do banco de dados que representa o funcionamento do Mercado Empodera, com foco em refletir fielmente as regras de negócio de um supermercado.
+Através da técnica de modelagem entidade-relacionamento (MER), foram definidos os principais componentes do sistema e suas interações, visando garantir consistência, integridade referencial e escalabilidade dos dados.
+
+As tabelas principais criadas foram:
+
+> Clientes: contendo informações como CPF, nome, idade, sexo, endereço e volume de compras.
+
+> Produtos: com dados sobre código, nome, embalagem, tamanho, sabor e preço de lista.
+
+> Notas Fiscais: registrando as compras realizadas, associadas a clientes e vendedores.
+
+> Itens de Notas Fiscais: detalhando os produtos vendidos em cada nota com quantidade e valor unitário.
+
+> Vendedores: com informações como matrícula, nome, percentual de comissão e data de admissão.
+
+O banco de dados foi implementado no SQL Server, com as devidas chaves primárias, estrangeiras e relacionamentos normalizados. Esse modelo possibilita análises complexas de performance de vendas, comportamento de compra dos clientes e eficiência da equipe comercial.
 
 ![Relacionamento](imagens/relacionamento.png)
 
 ### 3. 🧩 Criação do banco de dados no SQL Server
-Implementação das tabelas e relacionamentos com dados simulados.
+Com base no modelo entidade-relacionamento (MER) definido, foi realizada a implementação do banco de dados relacional no SQL Server para dar suporte ao funcionamento do projeto Mercado Empodera.
+As principais etapas desta fase foram:
+![database](imagens/arquitetura.png)
+- Criação do banco de dados MercadoEmpodera.
+- Implementação das tabelas com base no modelo físico: Clientes, Produtos, NotasFiscais, ItensNotasFiscais e Vendedores.
+- Definição de chaves primárias e estrangeiras para garantir integridade referencial entre as tabelas.
+- Criação de relacionamentos entre os dados, refletindo a estrutura de um sistema de vendas real.
+- Inserção de dados simulados nas tabelas, com base em cenários verossímeis de um supermercado:
+- Clientes com diferentes perfis de consumo e localização.
+- Produtos de diversas categorias com variações de tamanho e sabor.
+- Vendedores com diferentes níveis de comissão.
+- Notas fiscais simulando o histórico de compras.
+- Itens das notas detalhando os produtos vendidos.
+
+Esta etapa garante a base sólida para as etapas seguintes de ETL, análises e visualização, assegurando que os dados estejam bem estruturados e prontos para processamento.
 
 ### 4. ☁️ Arquitetura de Dados na Azure (Data Lake + Delta Lake)
 Aplicação da arquitetura em camadas (Bronze, Silver, Gold) com refinamento via notebooks e orquestração usando Data Factory.
