@@ -55,7 +55,7 @@ As tabelas principais criadas foram:
 
 O banco de dados foi implementado no SQL Server, com as devidas chaves primárias, estrangeiras e relacionamentos normalizados. Esse modelo possibilita análises complexas de performance de vendas, comportamento de compra dos clientes e eficiência da equipe comercial.
 
-![Relacionamento](imagens/relacionamento.png)
+![Relacionamento](imagens/relacionamento.jpeg)
 --
 ### 3. 🧩 Criação do banco de dados no SQL Server
 Com base no modelo entidade-relacionamento (MER) definido, foi realizada a implementação do banco de dados relacional no SQL Server para dar suporte ao funcionamento do projeto Mercado Empodera.
