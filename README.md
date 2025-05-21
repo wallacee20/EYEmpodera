@@ -149,7 +149,7 @@ Nesta etapa, foram construídos pipelines de ETL para simular o fluxo de dados d
 Bronze (chegada): ingestão bruta dos dados simulados.
 
 Silver (refinamento): tratamento e integração de dados de vendas, produtos, clientes e notas fiscais.
-
+![ETL](imagens/create.jpeg)
 Gold (curada): preparação dos dados para análise e visualização.
 
 - Exemplo de Consulta Analítica
